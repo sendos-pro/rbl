@@ -162,7 +162,7 @@ function multi_lookup(addresses,list, dnsList, limit) {
   });
 }
 
-function ip_lookup(ip_or_domain,list,limit) {
+function dnsbl(ip_or_domain,list,limit) {
   var root = this; 
    
   if(net.isIPv4(ip_or_domain)){    
@@ -191,7 +191,7 @@ function ip_lookup(ip_or_domain,list,limit) {
   events.EventEmitter.call(this);
 }
 
-function uribl_lookup(domain,list,limit){
+function uribl(domain,list,limit){
   list = list || uribl_list;  
 
   multi_lookup.call(this,domain,list,limit);
