@@ -1,0 +1,547 @@
+[{
+    "name": "SEM FRESH",
+    "url": "fresh.spameatingmonkey.net",
+    "dns": ["ns4.urmombl.com", "ns1.urmombl.com", "ns2.urmombl.com", "ns3.urmombl.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "SEM URI",
+    "url": "uribl.spameatingmonkey.net",
+    "dns": ["ns3.urmombl.com", "ns4.urmombl.com", "ns1.urmombl.com", "ns2.urmombl.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "SEM URIRED",
+    "url": "urired.spameatingmonkey.net",
+    "dns": ["ns3.urmombl.com", "ns4.urmombl.com", "ns1.urmombl.com", "ns2.urmombl.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "SORBS RHSBL BADCONF",
+    "url": "badconf.rhsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "SORBS RHSBL NOMAIL",
+    "url": "nomail.rhsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "Spamhaus DBL",
+    "url": "dbl.spamhaus.org",
+    "dns": ["0.ns.spamhaus.org", "3.ns.spamhaus.org", "4.ns.spamhaus.org", "5.ns.spamhaus.org", "7.ns.spamhaus.org", "8.ns.spamhaus.org", "b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org", "k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org", "x.ns.spamhaus.org"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "SURBL multi",
+    "url": "multi.surbl.org",
+    "dns": ["a.surbl.org","b.surbl.org","c.surbl.org","d.surbl.org","e.surbl.org","f.surbl.org","g.surbl.org","h.surbl.org","i.surbl.org","j.surbl.org","k.surbl.org","l.surbl.org","m.surbl.org","n.surbl.org"],
+    "ipv4": true,
+    "domain": true
+}, {
+    "name": "Domain Abuse.ro",
+    "url": "dbl.abuse.ro",
+    "dns": ["rbl.abuse.ro"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "URIBL Abuse.ro",
+    "url": "uribl.abuse.ro",
+    "dns": ["rbl.abuse.ro"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "BARRACUDA",
+    "url": "b.barracudacentral.org",
+    "dns": ["geons02.barracudacentral.org", "geons01.barracudacentral.org"],
+    "ipv4": true,
+    "domain": true
+}, {
+    "name": "SWINOG",
+    "url": "uribl.swinog.ch",
+    "dns": ["rblns.imp.ch"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "OSPAM DBL",
+    "url": "0spamurl.fusionzero.com",
+    "dns": ["ns1.area51services.net","ns1.fusionzero.com","ns2.area51services.net","ns2.fusionzero.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "URL JS",
+    "url": "url.rbl.jp",
+    "dns": ["ns.rbl.jp", "ns2.unix-inside.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "Suomispam Domain Blacklist",
+    "url": "dbl.suomispam.net",
+    "dns": ["ns1.verkkotelakka.net","ns2.verkkotelakka.net"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "Swinog URIBL",
+    "url": "uribl.swinog.ch",
+    "dns": ["rblns.imp.ch"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "ZapBL DBL",
+    "url": "rhsbl.zapbl.net",
+    "dns": ["d.ns.zapbl.net", "e.ns.zapbl.net", "a.ns.zapbl.net", "b.ns.zapbl.net", "c.ns.zapbl.net"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "Woody's SMTP Blacklist URIBL",
+    "url": "uri.blacklist.woody.ch",
+    "dns": ["ns.woody.ch","ns1.mowgli.ch","rblns.imp.ch"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "URIBL multi",
+    "url": "multi.uribl.com",
+    "dns": ["dd.uribl.com", "ee.uribl.com", "ff.uribl.com", "gg.uribl.com", "hh.uribl.com", "aa.uribl.com", "bb.uribl.com", "cc.uribl.com"],
+    "ipv4": false,
+    "domain": true
+}, {
+    "name": "Abuse.ro",
+    "url": "rbl.abuse.ro",
+    "dns": ["rbl.abuse.ro"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "AntiCaptcha.NET IPv6",
+    "url": "dnsbl6.anticaptcha.net",
+    "dns": ["ns.anticaptcha.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "ASPEWS",
+    "url": "aspews.ext.sorbs.net",
+    "dns": ["rbldns3.sorbs.net", "rbldns4.sorbs.net", "rbldns7.sorbs.net", "rbldns16.sorbs.net", "rbldns0.sorbs.net", "rbldns1.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "BACKSCATTERER",
+    "url": "ips.backscatterer.org",
+    "dns": ["dns-cluster-4.uceprotect.net", "dns-cluster-5.uceprotect.net", "dns-cluster-1.uceprotect.net", "dns-cluster-2.uceprotect.net", "dns-cluster-3.uceprotect.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "BLOCKLIST.DE",
+    "url": "bl.blocklist.de",
+    "dns": ["ns1.blocklist.de","ns2.blocklist.de","ns3.blocklist.de","ns4.blocklist.de","usa.blocklist.de"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "BSB",
+    "url": "bsb.empty.us",
+    "dns": ["ss1.fabel.dk", "ss2.fabel.dk", "ss3.fabel.dk"],
+    "ipv4": false,
+    "domain": false
+}, {
+    "name": "CALIVENT",
+    "url": "dnsbl.calivent.com.pe",
+    "dns": ["ns1.calivent.com.pe", "ns2.calivent.com.pe"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "CASA RBL",
+    "url": "cblless.anti-spam.org.cn",
+    "dns": ["ns9.anti-spam.org.cn", "ns1.anti-spam.org.cn", "ns2.anti-spam.org.cn", "ns7.anti-spam.org.cn", "ns8.anti-spam.org.cn"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "CASA CBL",
+    "url": "cblplus.anti-spam.org.cn",
+    "dns": ["ns9.anti-spam.org.cn", "ns1.anti-spam.org.cn", "ns2.anti-spam.org.cn", "ns7.anti-spam.org.cn", "ns8.anti-spam.org.cn"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "CASA CDL",
+    "url": "cdl.anti-spam.org.cn",
+    "dns": ["ns8.anti-spam.org.cn", "ns9.anti-spam.org.cn", "ns1.anti-spam.org.cn", "ns2.anti-spam.org.cn", "ns7.anti-spam.org.cn"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "CBL",
+    "url": "cbl.abuseat.org",
+    "dns": ["8.ns.spamhaus.org", "b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org", "k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org", "x.ns.spamhaus.org", "0.ns.spamhaus.org", "2.ns.spamhaus.org", "3.ns.spamhaus.org", "5.ns.spamhaus.org", "7.ns.spamhaus.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "CYMRU BOGONS",
+    "url": "bogons.cymru.com",
+    "dns": ["udns2.ultradns.net", "bogons.anycast.pch.net", "iad.nameserver.net", "ns1.cymru.com", "ns2.cymru.com", "ns3.cymru.com", "phl.nameserver.net", "rdu.nameserver.net", "sjc.nameserver.net", "sou.nameserver.net", "udns1.ultradns.net", "bos.nameserver.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "DAN TOR",
+    "url": "exitnodes.tor.dnsbl.sectoor.de",
+    "dns": ["ns1.sectoor.de","torns2.sectoor.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "DAN TOREXIT",
+    "url": "torexit.dan.me.uk",
+    "dns": ["ns.dan.xxx", "ns.dan.is", "ns.dan.tm", "ns.dan.tv", "ns.dan.cm", "ns.dan.host", "ns.dan.network", "ns.dan.me.uk"],
+    "ipv4": false,
+    "domain": false
+}, {
+    "name": "DNS Realtime Blackhole List",
+    "url": "dnsrbl.org",
+    "dns": ["ns02.dnsrbl.org", "ns01.dnsrbl.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "DNS SERVICIOS",
+    "url": "rbl.dns-servicios.com",
+    "dns": ["ns1rbl.dns-servicios.com", "ns2rbl.dns-servicios.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "DRMX",
+    "url": "bl.drmx.org",
+    "dns": ["dns2.communilink.net", "dns1.communilink.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "DRONE BL",
+    "url": "dnsbl.dronebl.org",
+    "dns": ["rbldns3.ns.dronebl.org","rbldns6.ns.dronebl.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "FABELSOURCES",
+    "url": "spamsources.fabel.dk",
+    "dns": ["ss2.fabel.dk", "ss3.fabel.dk"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "HIL",
+    "url": "hil.habeas.com",
+    "dns": ["a1-220.akam.net","a10-64.akam.net","a13-65.akam.net","a20-65.akam.net","a24-67.akam.net","a7-66.akam.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "IBM DNS Blacklist",
+    "url": "dnsbl.cobion.com",
+    "dns": ["ns1.cobion.com","ns2.cobion.com","ns4.cobion.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "INPS_DE",
+    "url": "dnsbl.inps.de",
+    "dns": ["vsrv4.inps-jung.net", "ovh1.inps-jung.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "INTERSERVER",
+    "url": "rbl.interserver.net",
+    "dns": ["ns100.interserver.net","ns200.interserver.net","ns300.interserver.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "IPrange RBL Project",
+    "url": "rbl.realtimeblacklist.com",
+    "dns": ["ns1.iprange.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "JIPPG",
+    "url": "mail-abuse.blacklist.jippg.org",
+    "dns": ["mx0.mail-servers.org", "ns.kk-ca.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Konstant",
+    "url": "bl.konstant.no",
+    "dns": ["ns3.konstant.no", "ns1.konstant.no", "ns2.konstant.no"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "LASHBACK",
+    "url": "ubl.unsubscore.com",
+    "dns": ["ns1.unsubscore.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "MADAVI",
+    "url": "dnsbl.madavi.de",
+    "dns": ["ns1.madavi.de", "ns3.madavi.de", "ns2.madavi.de", "ns4.madavi.de"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "MAILSPIKE BL",
+    "url": "bl.mailspike.net",
+    "dns": ["a.ns.mailspike.net","b.ns.mailspike.net","c.ns.mailspike.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "MEGARBL",
+    "url": "rbl.megarbl.net",
+    "dns": ["ns1.megarbl.net","ns2.megarbl.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "MSRBL Phishing",
+    "url": "phishing.rbl.msrbl.net",
+    "dns": ["msrbl-1.americas.msrbl.net", "msrbl-1.europe.msrbl.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "MSRBL Spam",
+    "url": "spam.rbl.msrbl.net",
+    "dns": ["msrbl-1.americas.msrbl.net", "msrbl-1.europe.msrbl.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "NETHERRELAYS",
+    "url": "relays.nether.net",
+    "dns": ["anyns.pch.net","puck.nether.net","thorn.blackrose.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "IMP-SPAM RBL",
+    "url": "dnsrbl.swinog.ch",
+    "dns": ["rblns.imp.ch"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "inps.de",
+    "url": "dnsbl.inps.de",
+    "dns": ["vsrv4.inps-jung.net", "ovh1.inps-jung.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "REDHAWK",
+    "url": "access.redhawk.org",
+    "dns": ["ns.redhawk.org", "ns1.redhawk.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "NIXSPAM",
+    "url": "ix.dnsbl.manitu.net",
+    "dns": ["ix-dns01.dnsbl.manitu.net","ix-dns11.dnsbl.manitu.net","ix-dns12.dnsbl.manitu.net","ix-dns13.dnsbl.manitu.net","ix-dns15.dnsbl.manitu.net","ix-dns17.dnsbl.manitu.net","ix-dns18.dnsbl.manitu.net","ix-dns19.dnsbl.manitu.net","ix-dns21.dnsbl.manitu.net","ix-dns22.dnsbl.manitu.net","ix-dns23.dnsbl.manitu.net"],
+    "ipv4": false,
+    "domain": false
+}, {
+    "name": "OSPAM",
+    "url": "0spam.fusionzero.com",
+    "dns": ["ns1.area51services.net", "ns1.fusionzero.com", "ns2.fusionzero.com", "ns2.area51services.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "PSBL",
+    "url": "psbl.surriel.com",
+    "dns": ["ns-pr.surriel.com", "psbl.primerelay.net", "rbldnsd.surriel.com", "ns-kam.surriel.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "RATS Dyna",
+    "url": "dyna.spamrats.com",
+    "dns": ["rbldns3.spamrats.com", "rbldns4.spamrats.com", "rbldns1.spamrats.com", "rbldns2.spamrats.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "RATS Spam",
+    "url": "spam.spamrats.com",
+    "dns": ["rbldns1.spamrats.com", "rbldns2.spamrats.com", "rbldns3.spamrats.com", "rbldns4.spamrats.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SCHULTE",
+    "url": "rbl.schulte.org",
+    "dns": ["ns3.rbl.schulte.org", "ns4.rbl.schulte.org", "ns.rbl.schulte.org", "ns2.rbl.schulte.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SECTOOR EXITNODES",
+    "url": "tor.dnsbl.sectoor.de",
+    "dns": ["ns1.sectoor.de", "torns2.sectoor.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SEM BACKSCATTER",
+    "url": "backscatter.spameatingmonkey.net",
+    "dns": ["ns3.urmombl.com", "ns4.urmombl.com", "ns1.urmombl.com", "ns2.urmombl.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SEM BLACK",
+    "url": "bl.spameatingmonkey.net",
+    "dns": ["ns4.urmombl.com", "ns1.urmombl.com", "ns2.urmombl.com", "ns3.urmombl.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Sender Score Reputation Network",
+    "url": "bl.score.senderscore.com",
+    "dns": ["nsb00-aws-eu1.rpdns.net","nsb00-aws-use1.rpdns.net","nsb00-aws-usw1.rpdns.net","nsb00-rac-ord.rpdns.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS BLOCK",
+    "url": "block.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS HTTP",
+    "url": "http.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS MISC",
+    "url": "misc.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS NEW",
+    "url": "new.spam.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS SMTP",
+    "url": "smtp.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS SOCKS",
+    "url": "socks.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS SPAM",
+    "url": "spam.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS WEB",
+    "url": "web.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SORBS ZOMBIE",
+    "url": "zombie.dnsbl.sorbs.net",
+    "dns": ["rbldns0.sorbs.net","rbldns1.sorbs.net","rbldns10.sorbs.net","rbldns11.sorbs.net","rbldns12.sorbs.net","rbldns13.sorbs.net","rbldns14.sorbs.net","rbldns15.sorbs.net","rbldns16.sorbs.net","rbldns17.sorbs.net","rbldns18.sorbs.net","rbldns2.sorbs.net","rbldns3.sorbs.net","rbldns4.sorbs.net","rbldns6.sorbs.net","rbldns7.sorbs.net","rbldns8.sorbs.net","rbldns9.sorbs.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SPAMCOP",
+    "url": "bl.spamcop.net",
+    "dns": ["blns17.spamcop.net","blns25.spamcop.net","blns34.spamcop.net","blns43.spamcop.net","blns49.spamcop.net","blns72.spamcop.net","blns87.spamcop.net","blns95.spamcop.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Spamhaus ZEN",
+    "url": "zen.spamhaus.org",
+    "dns": ["k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org", "x.ns.spamhaus.org", "0.ns.spamhaus.org", "2.ns.spamhaus.org", "3.ns.spamhaus.org", "4.ns.spamhaus.org", "5.ns.spamhaus.org", "7.ns.spamhaus.org", "8.ns.spamhaus.org", "b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Spamhaus XBL",
+    "url": "xbl.spamhaus.org",
+    "dns": ["b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org", "k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org", "x.ns.spamhaus.org", "0.ns.spamhaus.org", "2.ns.spamhaus.org", "3.ns.spamhaus.org", "4.ns.spamhaus.org", "5.ns.spamhaus.org", "7.ns.spamhaus.org", "8.ns.spamhaus.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Spamhaus PBL",
+    "url": "pbl.spamhaus.org",
+    "dns": ["x.ns.spamhaus.org", "0.ns.spamhaus.org", "2.ns.spamhaus.org", "3.ns.spamhaus.org", "4.ns.spamhaus.org", "5.ns.spamhaus.org", "7.ns.spamhaus.org", "8.ns.spamhaus.org", "b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org", "k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Spamhaus SBL",
+    "url": "sbl.spamhaus.org",
+    "dns": ["5.ns.spamhaus.org", "7.ns.spamhaus.org", "8.ns.spamhaus.org", "b.ns.spamhaus.org", "c.ns.spamhaus.org", "d.ns.spamhaus.org", "f.ns.spamhaus.org", "g.ns.spamhaus.org", "h.ns.spamhaus.org", "i.ns.spamhaus.org", "k.ns.spamhaus.org", "o.ns.spamhaus.org", "q.ns.spamhaus.org", "t.ns.spamhaus.org", "x.ns.spamhaus.org", "0.ns.spamhaus.org", "2.ns.spamhaus.org", "3.ns.spamhaus.org", "4.ns.spamhaus.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Suomispam Reputation",
+    "url": "bl.suomispam.net",
+    "dns": ["ns1.verkkotelakka.net","ns2.verkkotelakka.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "SWINOG",
+    "url": "dnsrbl.swinog.ch",
+    "dns": ["rblns.imp.ch"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "TRIUMF",
+    "url": "rbl2.triumf.ca",
+    "dns": ["trserv.triumf.ca", "TGate.triumf.ca"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "TRUNCATE",
+    "url": "truncate.gbudb.net",
+    "dns": ["blns4.gbudb.net", "blns3.gbudb.net", "blns2.gbudb.net", "blns1.gbudb.net", "blns5.gbudb.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "UCEPROTECTL1",
+    "url": "dnsbl-1.uceprotect.net",
+    "dns": ["dns-cluster-1.uceprotect.net", "dns-cluster-2.uceprotect.net", "dns-cluster-3.uceprotect.net", "dns-cluster-4.uceprotect.net", "dns-cluster-5.uceprotect.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "UCEPROTECTL2",
+    "url": "dnsbl-2.uceprotect.net",
+    "dns": ["dns-cluster-1.uceprotect.net", "dns-cluster-2.uceprotect.net", "dns-cluster-3.uceprotect.net", "dns-cluster-4.uceprotect.net", "dns-cluster-5.uceprotect.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "UCEPROTECTL3",
+    "url": "dnsbl-3.uceprotect.net",
+    "dns": ["dns-cluster-1.uceprotect.net", "dns-cluster-2.uceprotect.net", "dns-cluster-3.uceprotect.net", "dns-cluster-4.uceprotect.net", "dns-cluster-5.uceprotect.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Unsubscribe Blacklist UBL",
+    "url": "ubl.unsubscore.com",
+    "dns": ["ns1.unsubscore.com"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "VIRBL",
+    "url": "virbl.dnsbl.bit.nl",
+    "dns": ["nsauth1.bit.nl", "nsauth2.bit.nl", "nsauth3.bit.org"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "WPBL",
+    "url": "db.wpbl.info",
+    "dns": ["ns3.wpbl.info", "ns1.wpbl.info", "ns2.wpbl.info"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "ZapBL",
+    "url": "dnsbl.zapbl.net",
+    "dns": ["b.ns.zapbl.net", "c.ns.zapbl.net", "d.ns.zapbl.net", "e.ns.zapbl.net", "a.ns.zapbl.net"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Woody's SMTP Blacklist IPv4",
+    "url": "blacklist.woody.ch",
+    "dns": ["ns.woody.ch", "tschil.mowgli.ch", "rblns.imp.ch"],
+    "ipv4": true,
+    "domain": false
+}, {
+    "name": "Protected Sky RBL",
+    "url": "bad.psky.me",
+    "dns": [],
+    "ipv4": true,
+    "domain": false
+}]

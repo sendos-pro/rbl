@@ -1,0 +1,27 @@
+{
+  "author": "Adam Tutaev",
+  "bin": {
+    "sendos-lookup": "bin/sendos-lookup"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^0.9.0"
+  },
+  "deprecated": false,
+  "description": "Node.js multi DNSBL/URIBL Lookup",
+  "engines": {
+    "node": ""
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "sendos-lookup",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendos-pro/rbl.git"
+  },
+  "scripts": {
+    "test": "mocha -R spec -t 60000"
+  },
+  "version": "1.0.0"
+}
