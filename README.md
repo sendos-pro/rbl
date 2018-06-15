@@ -1,4 +1,4 @@
-## Node.js DNSBLs Lookup
+## DNSBLs Lookup (Node.js)
 Supports IPv4, IPv6 and Domain lookup. Works from command-line.
 ## Installation
 ##### Global
@@ -33,8 +33,6 @@ dnsbl.on('done', function(){
 });  
 ```
 
-#### [URI DNSBL Lookup](http://en.wikipedia.org/wiki/DNSBL#URI_DNSBL) :
-
 #####  uribl(domains,[uribl_list],limit)
 Performs a URI DNSBL query on the give domain(s). 
 
@@ -55,21 +53,23 @@ uribl.on('done', function(){ ... });
 _see more examples in test.js_
 
 ### Response:
- * `address`: lookup address
- * `status`: listed / not_listed
- * `A`: 'A' record lookup result only when listed
- * `TXT`: 'TXT' record lookup result if found
+ * `blName`: lookup address
+ * `blHostName`: listed / not_listed
+ * `blAddress`: listed / not_listed
+ * `blListing`: 'A' record lookup result only when listed
+ * `blMessage`: 'TXT' record lookup result if found
+ * `blActive`: 'TXT' record lookup result if found
+ * `blQueryTime`: 'TXT' record lookup result if found
 
 ```javascript  
-//if not listed
-{ address:'58.97.142.25', status: 'not_listed' }
-
-//if listed
-{ 
-  address: '58.97.142.25',
-  status: 'listed',
-  A: '127.0.0.2',
-  TXT: 'Blocked - see http://cbl.abuseat.org/lookup.cgi?ip=58.97.142.25' 
+{
+    "blName": "Spamhaus ZEN",
+    "blHostName": "zen.spamhaus.org",
+    "blAddress": "127.0.0.2"
+    "blListing": true,
+    "blMessage": "https://www.spamhaus.org/query/ip/127.0.0.2\nhttps://www.spamhaus.org/sbl/query/SBL2",
+    "blActive": true,
+    "blQueryTime": 576,
 }
 ```
 
