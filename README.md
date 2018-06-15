@@ -1,13 +1,16 @@
 ## Node.js DNSBLs Lookup
 Supports IPv4, IPv6 and Domain lookup. Works from command-line.
 ## Installation
+##### Global
 ```javascript
-npm install dnsbl-lookup -g
-var lookup = require('dnsbl-lookup'); // inside module
+npm i sendos-lookup -g
 ```    
-    
+##### Local
+```javascript
+npm i sendos-lookup --save
+const lookup = require('sendos-lookup');
+```     
 ## Usage
-#### [DNSBL Lookup](http://en.wikipedia.org/wiki/DNSBL#DNSBL_queries):
 
 ##### dnsbl(ip-or-domain,[dnsbl_list],[limit])
 Performs DNSBL lookup on the given IP address. If a domain is provided, lookup is performed on it's 'A' records. 
