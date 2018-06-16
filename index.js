@@ -84,9 +84,10 @@ function do_a_lookup(query, address, zoneUrl, zoneName, callback) {
           null,
           {"blName": zoneName,
           "blHostName": zoneUrl,
+          "blAddress": address,
           "blListing": false,
           "blMessage": false,
-          "blActive": true,
+          "blWorking": true,
           "blQueryTime": finish}
         );
       } else {
@@ -94,9 +95,10 @@ function do_a_lookup(query, address, zoneUrl, zoneName, callback) {
           null,
           {"blName": zoneName,
           "blHostName": zoneUrl,
+          "blAddress": address,
           "blListing": false,
           "blMessage": false,
-          "blActive": false,
+          "blWorking": false,
           "blQueryTime": finish}
           );
       }          
@@ -108,14 +110,17 @@ function do_a_lookup(query, address, zoneUrl, zoneName, callback) {
 
         if(err) return callback(err);
 
+        finish = new Date().getTime() - start;
+        
         if(records) {
           return callback(
             null,
             {"blName": zoneName,
             "blHostName": zoneUrl,
+            "blAddress": address,
             "blListing": true,
             "blMessage": records.join("\n") || false,
-            "blActive": true,
+            "blWorking": true,
             "blQueryTime": finish}
             );
         }
@@ -147,7 +152,6 @@ function multi_lookup(addresses,list, dnsList, limit) {
         if(err)
           root.emit('error',err,item);
         else{   
-          res.address = address;     
           root.emit('data',res,item);
         }        
         callback_b();
@@ -162,7 +166,7 @@ function multi_lookup(addresses,list, dnsList, limit) {
   });
 }
 
-function dnsbl(ip_or_domain,list,limit) {
+function dnsbl(ip_or_domain,list,limit){ 
   var root = this; 
    
   if(net.isIPv4(ip_or_domain)){    
