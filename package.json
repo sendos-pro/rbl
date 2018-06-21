@@ -9,13 +9,10 @@
   },
   "license": "ISC",
   "main": "index.js",
-  "name": "sendos-tools",
+  "name": "sendos-tools-dnsbl",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sendos-pro/sendos-tools.git"
+    "url": "git+https://github.com/sendos-pro/sendos-tools-dnsbl.git"
   },
-  "scripts": {
-    "test": "mocha -R spec -t 60000"
-  },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
