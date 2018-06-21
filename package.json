@@ -1,12 +1,20 @@
 {
-  "author": "Adam Tutaev",
+  "author": {
+    "name": "Adam Tutaev"
+  },
+  "bugs": {
+    "url": "https://github.com/sendos-pro/sendos-tools-dnsbl/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "async": "^0.9.0"
   },
+  "deprecated": false,
   "description": "Sendos Tools",
   "engines": {
     "node": ""
   },
+  "homepage": "https://github.com/sendos-pro/sendos-tools-dnsbl#readme",
   "license": "ISC",
   "main": "index.js",
   "name": "sendos-tools-dnsbl",
@@ -14,5 +22,5 @@
     "type": "git",
     "url": "git+https://github.com/sendos-pro/sendos-tools-dnsbl.git"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

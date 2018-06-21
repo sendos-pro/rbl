@@ -5,8 +5,8 @@ var LIMIT = 200,
   dns = require('dns'),
   util = require('util'),
   net = require('net'),
-  events = require("events");
-
+  events = require("events"),
+  bllist = require('./list/rbl.json');
 
 function expandIPv6Address(address)
 {
@@ -170,7 +170,7 @@ function dnsbl(ip_or_domain,list,limit){
   var root = this; 
    
   if(net.isIPv4(ip_or_domain)){    
-    list = list || dnsbl_list;
+    list = list || bllist;
     multi_lookup.call(this,ip_or_domain,list,limit);
   }  
   else if(net.isIPv6(ip_or_domain)){    
@@ -184,7 +184,7 @@ function dnsbl(ip_or_domain,list,limit){
         root.emit('done');
       }
       else if(addresses){
-        list = list || dnsbl_list;
+        list = list || bllist;
         multi_lookup.call(root,addresses,list,limit);
       }
       else {
