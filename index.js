@@ -6,7 +6,24 @@ var LIMIT = 200,
   util = require('util'),
   net = require('net'),
   events = require("events"),
-  bllist = require('./list/rbl.json');
+  blist = require('./list/blist.json');
+
+
+function getList(type) {
+
+  let list = [] 
+
+  blist.forEach(function(item, i, arr) {
+    if(arr.ipv4 == type) {
+      list.push(arr);
+    }
+  }); 
+
+  return list
+
+}
+
+
 
 function expandIPv6Address(address)
 {
@@ -132,7 +149,7 @@ function do_a_lookup(query, address, zoneUrl, zoneName, callback) {
 
 }
 
-function multi_lookup(addresses,list, dnsList, limit) {
+function multi_lookup(addresses, dnsList, list, limit) {
   var root = this;  
   addresses = Array.isArray(addresses)?addresses: [addresses];  
   limit = limit || LIMIT;
@@ -168,13 +185,13 @@ function multi_lookup(addresses,list, dnsList, limit) {
 
 function dnsbl(ip_or_domain,list,limit){ 
   var root = this; 
-   
+
   if(net.isIPv4(ip_or_domain)){    
-    list = list || bllist;
+    list = list || getList('ipv4');
     multi_lookup.call(this,ip_or_domain,list,limit);
   }  
   else if(net.isIPv6(ip_or_domain)){    
-    list = list || dnsbl_v6_list;
+    list = list || getList('ipv6');
     multi_lookup.call(this,ip_or_domain,list,limit);
   }
   else{
@@ -184,7 +201,7 @@ function dnsbl(ip_or_domain,list,limit){
         root.emit('done');
       }
       else if(addresses){
-        list = list || bllist;
+        list = list || blist;
         multi_lookup.call(root,addresses,list,limit);
       }
       else {
@@ -196,8 +213,7 @@ function dnsbl(ip_or_domain,list,limit){
 }
 
 function uribl(domain,list,limit){
-  list = list || uribl_list;  
-
+  list = list || getList('domain');  
   multi_lookup.call(this,domain,list,limit);
   events.EventEmitter.call(this);
 };
