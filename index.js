@@ -8,18 +8,34 @@ var LIMIT = 200,
   events = require("events"),
   blist = require("./list/blist.json");
 
+// async function getList(type) {
+//   let list = [];
+
+//   await blist.forEach(function(item, i, arr) {
+//     if (item[type]) {
+//       list.push(item);
+//     }
+//   });
+
+//   return list;
+// }
+
 function getList(type) {
+
   let list = [];
 
-  blist.forEach(function(item, i, arr) {
+  let addlist = blist.forEach(function(item, i, arr) {
     if (item[type]) {
       list.push(item);
     }
   });
 
   return list;
+
 }
 
+// console.log(getList("ipv4"));
+// 
 function expandIPv6Address(address) {
   var fullAddress = "";
   var expandedAddress = "";
@@ -135,7 +151,7 @@ function do_a_lookup(query, address, zoneUrl, zoneName, callback) {
   });
 }
 
-function multi_lookup(addresses, dnsList, list, limit) {
+function multi_lookup(addresses, list, dnsList, limit) {
   var root = this;
   addresses = Array.isArray(addresses) ? addresses : [addresses];
   limit = limit || LIMIT;
@@ -175,22 +191,38 @@ function multi_lookup(addresses, dnsList, list, limit) {
   );
 }
 
-function dnsbl(ip_or_domain, list, limit) {
+function check(ip_or_domain, list, dnsList, limit) {
   var root = this;
 
   if (net.isIPv4(ip_or_domain)) {
     list = list || getList("ipv4");
-    multi_lookup.call(this, ip_or_domain, list, limit);
+    multi_lookup.call(this, ip_or_domain, list, dnsList, limit);
   } else if (net.isIPv6(ip_or_domain)) {
     list = list || getList("ipv6");
-    multi_lookup.call(this, ip_or_domain, list, limit);
+    multi_lookup.call(this, ip_or_domain, list, dnsList, limit);
+  } else {
+    list = list || getList("domain");
+    multi_lookup.call(this, ip_or_domain, list, dnsList, limit);
+  }
+  events.EventEmitter.call(this);
+}
+
+function dnsbl(ip_or_domain, list, dnsList, limit) {
+  var root = this;
+
+  if (net.isIPv4(ip_or_domain)) {
+    list = list || getList("ipv4");
+    multi_lookup.call(this, ip_or_domain, list, dnsList, limit);
+  } else if (net.isIPv6(ip_or_domain)) {
+    list = list || getList("ipv6");
+    multi_lookup.call(this, ip_or_domain, list, dnsList, limit);
   } else {
     dns.resolve(ip_or_domain, function(err, addresses) {
       if (err) {
         root.emit("error", err);
         root.emit("done");
       } else if (addresses) {
-        list = list || blist;
+        list = list || getList("ipv4");
         multi_lookup.call(root, addresses, list, limit);
       } else {
       }
@@ -199,14 +231,16 @@ function dnsbl(ip_or_domain, list, limit) {
   events.EventEmitter.call(this);
 }
 
-function uribl(domain, list, limit) {
+function uribl(domain, list, dnsList, limit) {
   list = list || getList("domain");
-  multi_lookup.call(this, domain, list, limit);
+  multi_lookup.call(this, domain, list, dnsList, limit);
   events.EventEmitter.call(this);
 }
 
+util.inherits(check, events.EventEmitter);
 util.inherits(dnsbl, events.EventEmitter);
 util.inherits(uribl, events.EventEmitter);
+exports.check = check;
 exports.dnsbl = dnsbl;
 exports.uribl = uribl;
 exports.reverseIP = reverseIP;
